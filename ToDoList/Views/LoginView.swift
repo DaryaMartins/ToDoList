@@ -8,39 +8,42 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewViewModel()
     
     var body: some View {
         NavigationView {
             VStack {
                 // Header
-                HeaderView()
+                HeaderView(
+                    title: "To Do List",
+                    subtitle: "Get things done",
+                    angle: 15,
+                    background: .pink
+                )
                 
                 // Login form
+
                 Form {
-                    TextField("Email Address", text: $email)
-                        .textFieldStyle(.plain)
-                        .listRowSeparator(.hidden)
-                        .padding(.top, 10)
-                    SecureField("Password", text: $password)
-                        .textFieldStyle(.plain)
-                        .listRowSeparator(.hidden)
-                    
-                    Button {
-                        
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundStyle(.blue)
-                            
-                            Text("Log in")
-                                .foregroundStyle(.white)
-                                .bold()
-                        }
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundStyle(.red)
                     }
-                    .padding()
+                    
+                    TextField("Email Address", text: $viewModel.email)
+                        .listRowSeparator(.hidden)
+                        .autocorrectionDisabled()
+                        .textInputAutocapitalization(.never)
+                        .padding(.top, 10)
+                    SecureField("Password", text: $viewModel.password)
+                        .listRowSeparator(.hidden)
+                    TLButton(
+                        title: "Log in",
+                        background: .blue
+                    ) {
+                        viewModel.login()
+                    }
                 }
+                .offset(y: -50)
                 
                 
                 

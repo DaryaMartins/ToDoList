@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8282AFBE2B012B7000694E75 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8282AFBD2B012B7000694E75 /* TLButton.swift */; };
 		82B0F7632AFBC5D700BC8DDF /* ToDoListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0F7622AFBC5D700BC8DDF /* ToDoListApp.swift */; };
 		82B0F7652AFBC5D700BC8DDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0F7642AFBC5D700BC8DDF /* MainView.swift */; };
 		82B0F7672AFBC5D800BC8DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B0F7662AFBC5D800BC8DDF /* Assets.xcassets */; };
@@ -58,6 +59,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8282AFBD2B012B7000694E75 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		82B0F75F2AFBC5D700BC8DDF /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B0F7622AFBC5D700BC8DDF /* ToDoListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListApp.swift; sourceTree = "<group>"; };
 		82B0F7642AFBC5D700BC8DDF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				82B0F7B62AFD48CC00BC8DDF /* RegisterView.swift */,
 				82B0F7B82AFD490300BC8DDF /* ToDoListItemView.swift */,
 				82B0F7CC2AFD4E1500BC8DDF /* HeaderView.swift */,
+				8282AFBD2B012B7000694E75 /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				82B0F7BF2AFD497F00BC8DDF /* MainViewViewModel.swift in Sources */,
 				82B0F7B12AFD487600BC8DDF /* ToDoListView.swift in Sources */,
 				82B0F7B72AFD48CC00BC8DDF /* RegisterView.swift in Sources */,
+				8282AFBE2B012B7000694E75 /* TLButton.swift in Sources */,
 				82B0F7C12AFD499800BC8DDF /* ProfileViewViewModel.swift in Sources */,
 				82B0F7AF2AFD484D00BC8DDF /* ProfileView.swift in Sources */,
 				82B0F7BB2AFD493C00BC8DDF /* User.swift in Sources */,
